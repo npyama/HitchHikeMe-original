@@ -1,5 +1,2 @@
-hichhikeme個人確認用
+hichhikeme遒ｺ隱咲畑
 =================
-
-hichhikeme client
-
