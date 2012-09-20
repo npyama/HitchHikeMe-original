@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html  class="ui-mobile" lang="ja">
+<head>
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="./stylesheets/jquery.mobile-1.1.0.min.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/reset-min.css" rel="stylesheet" type="text/css">
+<script src="./javascripts/cordova-1.7.0.js"></script>
+<script src="./javascripts/jquery-1.7.2.min.js"></script>
+<script src="./javascripts/jquery.mobile-1.1.0.min.js"></script>
+<script src="./javascripts/main.js"></script>
+<script>
+ $(document).ready(function() {
+  // disable ajax nav
+  $.mobile.ajaxLinksEnabled = false;
+ });
+</script>
+</head>
+<body class="ui-mobile-viewport">
+
+
+<!-- ----------------------------
+	facebook認証ページ - authentication -
+----------------------------- -->
+<div data-role="page" id="page1">
+<div id="authentication_bg">
+	<div data-role="header">
+	<div id="authentication_header">
+	<p>▼ HitchHikeMe! > 認証ページ</p>
+	</div>
+	</div>
+
+	<div id="mainField" data-role="content">
+		<div id="authentication_balloon"></div>
+ 		<div id="authentication_button01"><a href="#page2"></a></div>
+	</div>
+</div>
+</div>
+
+
+<!-- ----------------------------
+	ユーザーセレクト - 
+----------------------------- -->
+ 		<div data-role="page" id="page2">
+		<div id="top_bg">
+	 		<div data-role="header"></div>
+		 	<div id="mainField" data-role="content">
+				<div id="top_balloon"></div>
+			 	<a href="#page3"><div id="top_hh"></div></a>
+			 	<a href="#page4"><div id="top_dr"></div></a>
+			</div>
+		</div>
+		</div>
+
+
+
+
+</body>
+</html>
