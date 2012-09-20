@@ -1,2 +1,5 @@
-hichhikeme確認用
+hichhikeme-client
 =================
+
+hichhikeme client
+npyamadayo~

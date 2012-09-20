@@ -1,48 +1,35 @@
-<!DOCTYPE html>
-<html  class="ui-mobile" lang="ja">
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>HitchHikeMe-original</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<link href="./stylesheets/jquery.mobile-1.1.0.min.css" rel="stylesheet" type="text/css">
-<link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
-<link href="./stylesheets/reset-min.css" rel="stylesheet" type="text/css">
-<script src="./javascripts/cordova-1.7.0.js"></script>
-<script src="./javascripts/jquery-1.7.2.min.js"></script>
-<script src="./javascripts/jquery.mobile-1.1.0.min.js"></script>
-<script src="./javascripts/main.js"></script>
-<script>
- $(document).ready(function() {
-  // disable ajax nav
-  $.mobile.ajaxLinksEnabled = false;
- });
-</script>
-</head>
-<body class="ui-mobile-viewport">
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 	 	<meta charset="utf-8" />
+		<title>HitchhikeMe!</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no" /> 
+ 		<link href="./stylesheets/jquery.mobile-1.1.0.min.css" rel="stylesheet" type="text/css">
+		<link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
+  		<script src="./javascripts/cordova-1.7.0.js"></script>
+ 		<script src="./javascripts/jquery-1.7.2.min.js"></script>
+ 		<script src="./javascripts/jquery.mobile-1.1.0.min.js"></script>
+ 		<script src="./javascripts/main.js"></script>
+ 	</head>
+ 	<body>
 
 
-<!-- ----------------------------
-	facebookË™çË®º„Éö„Éº„Ç∏ - authentication -
------------------------------ -->
-<div data-role="page" id="page1">
-<div id="authentication_bg">
-	<div data-role="header">
-	<div id="authentication_header">
-	<p>‚ñº HitchHikeMe! > Ë™çË®º„Éö„Éº„Ç∏</p>
-	</div>
-	</div>
-
-	<div id="mainField" data-role="content">
-		<div id="authentication_balloon"></div>
- 		<div id="authentication_button01"><a href="#page2"></a></div>
-	</div>
-</div>
-</div>
+<!-- facebookîFèÿÉyÅ[ÉW -->
+ 		<div data-role="page" id="page1">
+		<div id="authentication_bg">
+	 		<div data-role="header"></div>
+		 	<div id="mainField" data-role="content">
+<!--				<div id="authentication_balloon"></div> -->
+			 	<div id="authentication_button01"><a href="#page2"></a></div>
+			</div>
+		</div>
+		</div>
+<!-- / facebookîFèÿÉyÅ[ÉW -->
 
 
-<!-- ----------------------------
-	„É¶„Éº„Ç∂„Éº„Çª„É¨„ÇØ„Éà - 
------------------------------ -->
+
+
+<!-- TOP-ÉÜÅ[ÉUÅ[ÉZÉåÉNÉgÉyÅ[ÉW -->
  		<div data-role="page" id="page2">
 		<div id="top_bg">
 	 		<div data-role="header"></div>
@@ -53,9 +40,162 @@
 			</div>
 		</div>
 		</div>
+<!-- / TOP-ÉÜÅ[ÉUÅ[ÉZÉåÉNÉgÉyÅ[ÉW -->
+
+
+
+<!-- hitchhikerópì¸óÕÉyÅ[ÉW -->
+		<div data-role="page" id="page3">
+		<div id="sellect_bg_hh">
+			<div data-role="header">
+			</div>
+			<div data-role="content">
+				<div id="sellect_ballon"></div>
+<!--
+				<p><a href="#page2">Go back</a></p>
+-->
+				<div id="sellect_from"></div>
+				<div id="sellect_from_ballon">
+					<form action="http://hichhikeme.herokuapp.com/post" method="post" data-ajax="false">
+					<div id="form_from">
+					<p>
+						<select name="from">
+							<option value="1">A</option>
+							<option value="2">B</option>
+							<option value="3">C</option>
+							<option value="4">D</option>
+							<option value="5">E</option>
+						</select>
+					</p>
+					</div>
+					</form>
+				</div>
+
+
+				<div id="sellect_cen_ballon">
+					<div id="form_cen">
+					<p><textarea name="desc" id="hitchDesc"></textarea></p>
+					</div>
+				</div>
+
+
+				<div id="sellect_to_ballon">
+					<form action="http://hichhikeme.herokuapp.com/post" method="post" data-ajax="false">
+					<div id="form_to">
+					<p>
+						<select name="to">
+							<option value="1">A</option>
+							<option value="2">B</option>
+							<option value="3">C</option>
+							<option value="4">D</option>
+							<option value="5">E</option>
+						</select>
+					</p>
+					</div>
+					</form>
+				</div>
+
+				<div id="sellect_to"></div>
+
+					<a href="#page5"><div id="sellect_submit_hh"></div></a>
+				
+
+				</div>
+		</div>
+		</div>
+<!-- / hitchhikerópì¸óÕÉyÅ[ÉW -->
+
+
+
+<!-- Driverópì¸óÕÉyÅ[ÉW -->
+		<div data-role="page" id="page4">
+		<div id="sellect_bg_dr">
+			<div data-role="header">
+			</div>
+			<div data-role="content">
+				<div id="sellect_ballon"></div>
+<!--
+				<p><a href="#page2">Go back</a></p>
+-->
+				<div id="sellect_from"></div>
+				<div id="sellect_from_ballon">
+					<form action="http://hichhikeme.herokuapp.com/post" method="post" data-ajax="false">
+					<div id="form_from">
+					<p>
+						<select name="from">
+							<option value="1">A</option>
+							<option value="2">B</option>
+							<option value="3">C</option>
+							<option value="4">D</option>
+							<option value="5">E</option>
+						</select>
+					</p>
+					</div>
+					</form>
+				</div>
+				
+				
+				
+				<div id="sellect_cen_ballon">
+					<div id="form_cen">
+					<p><textarea name="desc" id="hitchDesc"></textarea></p>
+					</div>				
+				</div>
+
+				<div id="sellect_to_ballon">
+					<form action="http://hichhikeme.herokuapp.com/post" method="post" data-ajax="false">
+					<div id="form_to">
+					<p>
+						<select name="to">
+							<option value="1">A</option>
+							<option value="2">B</option>
+							<option value="3">C</option>
+							<option value="4">D</option>
+							<option value="5">E</option>
+						</select>
+					</p>
+					</div>
+					</form>				
+				</div>
+				<div id="sellect_to"></div>
+
+				<a href="#page5"><div id="sellect_submit_dr"></div></a>
+			</div>
+		</div>
+		</div>
+<!-- /Driverópì¸óÕÉyÅ[ÉW -->
 
 
 
 
-</body>
-</html>
+
+<!-- É}ÉbÉ`ÉìÉOåãâ ÉyÅ[ÉW -->
+ 		<div data-role="page" id="page5">
+		<div id="matching_bg">
+	 		<div data-role="header"></div>
+		 	<div id="mainField" data-role="content">
+				<div id="matching_balloon01">
+				<p id="matching_to">Ç±Ç±Ç©ÇÁ</p>
+				<p id="matching_from">Ç±Ç±Ç‹Ç≈</p>
+				</div>
+				<div id="wrapper">
+						<div id="contents">
+						</div>
+
+						<div id="prev"></div>
+				</div>
+				<div id="next"></div>
+				</div>
+
+				<div id="matching_balloon02"></div>
+			 	<div id="matching_submit"></div>
+			</div>
+		</div>
+		</div>
+<!-- / É}ÉbÉ`ÉìÉOåãâ ÉyÅ[ÉW -->
+
+
+
+
+ 	</body>
+ </html>
